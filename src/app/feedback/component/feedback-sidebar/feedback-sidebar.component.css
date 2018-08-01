@@ -1,0 +1,21 @@
+mat-drawer-backdrop {
+    background-color: white;
+}
+
+mat-drawer-shown {
+    background-color: white;
+}
+
+mat-sidenav {
+    bottom: 0;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 10px;
+    position: fixed;
+    top: 64px;
+    width: 400px;
+}
+
+.content-position {
+    padding-top: 10px;
+}

@@ -1,0 +1,14 @@
+<!--mat-toolbar color="primary">
+
+  
+  <mat-menu #appMenu="matMenu">
+      <button mat-menu-item *ngIf="loggedIn">Profile</button>
+      <button mat-menu-item *ngIf="loggedIn">Settings</button>
+      <button mat-menu-item>Help</button>
+      <button mat-menu-item *ngIf="loggedIn">Logout</button>
+    </mat-menu>
+
+  <button mat-icon-button [matMenuTriggerFor]="appMenu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+</mat-toolbar-->

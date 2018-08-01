@@ -1,0 +1,15 @@
+<mat-sidenav-container [hasBackdrop]="false">
+  <mat-sidenav position="end" opened>
+    <app-heading3 [text]="user.sprint"></app-heading3>
+    <br>
+    <app-card-list-checkbox title="Team members" [list]="teamMembers" (select)="selectTeamMember($event)"></app-card-list-checkbox>
+    <br>
+    <app-card-list-checkbox [title]="retro.name" [description]="retro.description" [list]="retro.questions" (select)="selectRetro($event)"></app-card-list-checkbox>
+    <br>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="content-position">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

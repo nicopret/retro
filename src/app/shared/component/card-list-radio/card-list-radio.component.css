@@ -1,0 +1,9 @@
+li {
+    cursor: pointer;
+    list-style: none;
+}
+
+.mat-card-title {
+    font-size: 120%;
+    font-weight: 600;
+}

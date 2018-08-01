@@ -1,0 +1,12 @@
+<div class="container" *ngIf="retro">
+  <app-heading3 [text]="retro.value"></app-heading3>
+</div>
+
+<div class="spacing container" *ngIf="retro">
+  <ol>
+    <li *ngFor="let answer of retro.answers">{{ answer }}</li>
+  </ol>
+</div>
+<div class="spacing container">
+  <app-textarea (value)="saveAnswer($event)"></app-textarea>
+</div>

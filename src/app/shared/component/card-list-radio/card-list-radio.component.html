@@ -1,0 +1,13 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{ title }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <ul>
+      <li *ngFor="let item of options" (click)="selectItem(item.score)">
+        <input type="radio" name="radios{{ index }}" [checked]="item.score == value">{{ item.label }}
+      </li>
+    </ul>
+  </mat-card-content>
+</mat-card>
+<br>

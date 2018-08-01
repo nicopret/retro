@@ -1,0 +1,6 @@
+<div class="container" *ngIf="user">
+    <app-heading3 [text]="user.name"></app-heading3>
+</div>
+<div class="container" *ngFor="let item of metrics; let index = index">
+    <app-card-list-radio [index]="index" [options]="item.options" [title]="item.metric" [value]="item.value" (select)="selectOption($event)"></app-card-list-radio>
+</div>

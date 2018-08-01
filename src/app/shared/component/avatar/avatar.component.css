@@ -1,0 +1,16 @@
+.avatar-image img {
+    width: 48px;
+    height: 48px;
+    max-height: 48px;
+    max-width: 48px;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    right: 48px;
+}
+
+.avatar-text {
+    font-size: 30px;
+    height: 30px;
+    line-height: 30px;
+}
